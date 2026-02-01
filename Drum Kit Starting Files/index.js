@@ -1,18 +1,16 @@
-// 1. Find all the buttons with the class "drum"
+
 var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
-  // 2. Add a 'click' listener to every button
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     
-    var buttonInnerHTML = this.innerHTML; // This gets the letter (w, a, s, etc.)
+    var buttonInnerHTML = this.innerHTML;
     makeSound(buttonInnerHTML);
     buttonAnimation(buttonInnerHTML);
     
   });
 }
 
-// 3. Function to play the correct sound based on the letter
 function makeSound(key) {
   switch (key) {
     case "w":
@@ -54,7 +52,6 @@ function makeSound(key) {
   }
 }
 
-// 4. Add visual "pressed" effect
 function buttonAnimation(currentKey) {
   var activeButton = document.querySelector("." + currentKey);
   activeButton.classList.add("pressed");
