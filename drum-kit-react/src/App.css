@@ -1,0 +1,42 @@
+body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", serif;
+  text-shadow: 3px 0 #40514E;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.drum {
+  
+  outline: none;
+  border: 10px solid #40514E;
+  font-family: "Arvo", serif;
+  font-weight: 900;
+  color: #DA0463;
+  background-color: white;
+  cursor: pointer;
+  margin: 10px;
+  
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;   
+  
+  display: inline-flex;     
+  align-items: center;      
+  justify-content: center;   
+
+  font-size: 4rem;      
+  line-height: normal;    
+}
+.drum:hover {
+  color: white;
+  background-color: #DA0463;
+}
